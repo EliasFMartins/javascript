@@ -16,8 +16,36 @@
   <h1>Iniciando Estudos com DOM</h1>
   <p>aqui vai o resultado</p>
   <p>aprendendo a uusar o <strong>DOM</strong> em JavaScript</p>
-  <div>
+  <div id="msg">
     clique em min '-'
   </div>
+  <script>
+  // window.document.write('ola mundo ')
+  // window.document.write(window.document.characterSet) 
+  // window.document.write(window.navigator.appName)
+  // window.document.write(window.document.URL)[
+    p1 = window.document.getElementsByTagName('p')[1]
+    p2 = window.document.body
+    d = document.getElementById('msg')
+    // window.document.write('Esta escrito assim : '+p1.innerText)
+    p1.style.color='blue'
+    p2.style.background='cyan'
+    // window.alert(p1.innerText)
+    d.style.background='gray'
+    d.innerText='Estou aguardando '
+    d=document.querySelector('div#msg')
+    d.style.color='red'
+  </script>
 </body>
 </html>
+<!-- window.document.write
+funciona como print
+p1 e o elemento e innerText e 
+para ler o que esta dentro do elemento ! -->
+<!-- depois q a variavel for declarada , vc pode  -->
+<!-- usar ela pra dar comando diretamente  como style  dentre outras coisas -->
+<!-- innerHTML mostra tudo na parte solicitada as tags e tudo mais  -->
+<!-- o innerText mostra apenas o texto contido -->
+<!-- tambem e possivel alterar o conteudo de uma tag  -->
+<!-- com js   -->
+<!-- DOM document object model -->
