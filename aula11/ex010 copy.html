@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detran2.0</title>
+</head>
+<body>
+<h1>Execicio</h1>
+Digite o Pais em que vc nasceu <input type="text" id="pais">
+<input type="button" value="conferir" onclick="verificar()">
+<div id="res"></div>
+
+<script>
+  function verificar() {
+    pais=document.querySelector('input#pais')
+    res=document.querySelector('div#res')
+    res.innerHTML= `<p>Seu Pais e ${pais.value}</p>`
+    if(pais.value=='brasil'){
+      res.innerHTML+=`vc e Brasileiro !!`}
+    else{
+      res.innerHTML+=`vc n e br`
+    }
+  }
+  
+</script>
+
+<!-- atenção esse += na frente das frases com res.innerHTML e pra fazer a concatenação e junta as frases caso n tenha o +  so mostra a frase do if e else -->
+  <!-- tabem e preciso sempre colocar o value pra poder funfa os role  -->
+</body>
+</html>
