@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Exercicio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <h1>Test de idade</h1>
+  </header>
+  <section>
+  <div>
+<p>Ano de nascimento:
+<input type="number" name="txtano" id="txtano" min="0"> </p>
+<p>Sexo: <input type="radio" name="radsex" id="mas" checked> 
+<label for="mas">Masculino</label>
+<input type="radio" name="radsex" id="fem">
+<label for="fem">Feminino</label>
+<!-- input number cria uma caixa pra digitar numero
+input radio cria as bolinhas  pra escolhera opção o label permite colocar texto apos as bolinhas ! -->
+</p>
+<p>
+  <input type="button" value="Verificar" onclick="verificar()">
+  <!-- o onclick vai enviar as informações para o js -->
+  <!-- cria um botão com o texto do value -->
+</p>
+  </div>
+  <div id="res">
+    Preencha os dados acima para ver os resultados 
+  </div>
+  </section>
+  <footer>
+  <p>&copy; Elias Martins 2022</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
