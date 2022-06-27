@@ -1,4 +1,4 @@
-function verificar(params) {
+function verificar() {
 data=new Date()
 ano=data.getFullYear()
 // getFullYear e pra pegar o ano com 4 digitos!
@@ -31,11 +31,9 @@ if(fano.value.length==0 ||fano.value>ano){
       //idoso
       img.setAttribute('src','foto-idoso-m.png')
     }
-   
-    
   } else if(fsex[1].checked) {
       genero ='Mulher'
-    }
+  
     if(idade>=0 && idade<10){
       // criança
       img.setAttribute('src','foto-bebe-f.png')
@@ -49,12 +47,9 @@ if(fano.value.length==0 ||fano.value>ano){
       //idoso
       img.setAttribute('src','foto-idoso-f.png')
     }
-    res.style.textAlin='center'
-   res.innerHTML=`Detectamos ${genero} com ${idade} anos.`
-   res.appendChild(img)
-    
-  }
-
-
+  }  
+  res.innerHTML=`Detectamos ${genero} com ${idade} anos`
+  res.appendChild(img) 
 // res.innerHTML=`Idade calculada :${idade}`
+}
 }
